@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- ======================GRUNT MINOR ARMOR====================== -->
+
+	<ThingDef ParentName="ArmorHelmetMakeableBase">
+		<defName>GruntMask</defName>
+		<label>Grunt Mask</label>
+		<techLevel>Spacer</techLevel>
+		<description>A Mask used by the Unggoy Race.</description>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<researchPrerequisite>Covenant_Lesser</researchPrerequisite>
+			<recipeUsers Inherit="False">
+				<li>CovenantWorkbench</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<statBases>
+			<WorkToMake>2200</WorkToMake>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Mass>1.8</Mass>
+			<Flammability>0.4</Flammability>
+			<ArmorRating_Sharp>0.20</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.10</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.40</ArmorRating_Heat>
+                        <Insulation_Cold>15</Insulation_Cold>
+                        <Insulation_Heat>25</Insulation_Heat>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<thingCategories Inherit="False">
+			<li>CovenantGear</li>
+		</thingCategories>
+		<costList>
+			<Plasteel>25</Plasteel>
+			<Uranium>5</Uranium>
+		</costList>
+		<graphicData>
+			<texPath>Apparel/CovenantApparel/Grunt/GruntMH/GruntHelmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+                        <shaderType>CutoutComplex</shaderType>
+			<drawSize>1.6</drawSize>
+		</graphicData>
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Apparel/CovenantApparel/Grunt/GruntMH/GruntHelmet</wornGraphicPath>
+                        <useWornGraphicMask>true</useWornGraphicMask>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>UnggoyMask</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>UnggoyMask</li>
+			</defaultOutfitTags>
+		</apparel>
+		<thingSetMakerTags>
+			<li>RewardSpecial</li>
+		</thingSetMakerTags>
+	</ThingDef>
+
+	<ThingDef ParentName="ArmorMakeableBaseCov">
+		<defName>GruntMinor</defName>
+		<label>Grunt Armor</label>
+		<techLevel>Spacer</techLevel>
+		<description>Unggoy Minor armor</description>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<researchPrerequisite>Covenant_Lesser</researchPrerequisite>
+			<recipeUsers Inherit="False">
+				<li>CovenantWorkbench</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<statBases>
+			<WorkToMake>4000</WorkToMake>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Mass>5</Mass>
+			<Flammability>0.4</Flammability>
+			<ArmorRating_Sharp>0.32</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.20</ArmorRating_Blunt>
+			<ArmorRating_Heat>1.0</ArmorRating_Heat>
+                        <Insulation_Cold>15</Insulation_Cold>
+                        <Insulation_Heat>25</Insulation_Heat>
+			<EquipDelay>5</EquipDelay>
+		</statBases>
+		<thingCategories Inherit="False">
+			<li>CovenantGear</li>
+		</thingCategories>
+		<costList>
+			<Plasteel>120</Plasteel>
+			<Uranium>10</Uranium>
+		</costList>
+		<graphicData>
+			<texPath>Apparel/CovenantApparel/Grunt/GruntMinorA/GruntArmorb</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+                        <shaderType>CutoutComplex</shaderType>
+			<drawSize>1.6</drawSize>
+		</graphicData>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+                                <li>Feet</li>
+                                <li>Hands</li>
+                                <li>Neck</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Apparel/CovenantApparel/Grunt/GruntMinorA/GruntArmor</wornGraphicPath>
+                        <useWornGraphicMask>true</useWornGraphicMask>
+			<layers>
+				<li>Shell</li>
+				<li>Middle</li>
+			</layers>
+			<tags>
+				<li>UnggoyMinorArmor</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>UnggoyMinorArmor</li>
+			</defaultOutfitTags>
+                        <useDeflectMetalEffect>true</useDeflectMetalEffect>
+		</apparel>
+                <tickerType>Normal</tickerType>
+		<thingSetMakerTags>
+		  <li>RewardSpecial</li>
+		</thingSetMakerTags>
+  </ThingDef>
+
+
+<!-- ======================Kig Yar ARMOR====================== -->
+
+
+	<ThingDef ParentName="ArmorHelmetMakeableBase">
+		<defName>JackalHelmet</defName>
+		<label>Jackal Helmet</label>
+		<techLevel>Spacer</techLevel>
+		<description>A Mask used by the Jackals.</description>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<researchPrerequisite>Covenant_Lesser</researchPrerequisite>
+			<recipeUsers Inherit="False">
+				<li>CovenantWorkbench</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<statBases>
+			<WorkToMake>2200</WorkToMake>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Mass>1.8</Mass>
+			<Flammability>0.4</Flammability>
+			<ArmorRating_Sharp>0.20</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.10</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.40</ArmorRating_Heat>
+                        <Insulation_Cold>15</Insulation_Cold>
+                        <Insulation_Heat>25</Insulation_Heat>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<thingCategories Inherit="False">
+			<li>CovenantGear</li>
+		</thingCategories>
+		<costList>
+			<Plasteel>25</Plasteel>
+			<Uranium>5</Uranium>
+		</costList>
+		<graphicData>
+			<texPath>Apparel/CovenantApparel/KJ/Helmet_Jackal/HelmetJackal</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+                        <shaderType>CutoutComplex</shaderType>
+			<drawSize>1.6</drawSize>
+		</graphicData>
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Apparel/CovenantApparel/KJ/Helmet_Jackal/HelmetJackal</wornGraphicPath>
+                        <useWornGraphicMask>true</useWornGraphicMask>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>JackalHelmet</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>JackalHelmet</li>
+			</defaultOutfitTags>
+		</apparel>
+		<thingSetMakerTags>
+			<li>RewardSpecial</li>
+		</thingSetMakerTags>
+	</ThingDef>
+
+	<ThingDef ParentName="ArmorMakeableBaseCov">
+		<defName>JackalA</defName>
+		<label>Jackal Harness</label>
+		<techLevel>Spacer</techLevel>
+		<description>Kig Yar armor</description>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<researchPrerequisite>Covenant_Lesser</researchPrerequisite>
+			<recipeUsers Inherit="False">
+				<li>CovenantWorkbench</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<statBases>
+			<WorkToMake>1000</WorkToMake>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Mass>5</Mass>
+			<Flammability>0.4</Flammability>
+			<ArmorRating_Sharp>0.42</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.10</ArmorRating_Blunt>
+			<ArmorRating_Heat>1.0</ArmorRating_Heat>
+                        <Insulation_Cold>15</Insulation_Cold>
+                        <Insulation_Heat>25</Insulation_Heat>
+			<EquipDelay>5</EquipDelay>
+		</statBases>
+		<thingCategories Inherit="False">
+			<li>CovenantGear</li>
+		</thingCategories>
+		<costList>
+			<Plasteel>50</Plasteel>
+			<Uranium>5</Uranium>
+		</costList>
+		<graphicData>
+			<texPath>Apparel/CovenantApparel/KJ/Armor_Jackal/ArmorJackal</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+                        <shaderType>CutoutComplex</shaderType> 
+			<drawSize>1.6</drawSize>
+		</graphicData>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+                                <li>Feet</li>
+                                <li>Hands</li>
+                                <li>Neck</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Apparel/CovenantApparel/KJ/Armor_Jackal/ArmorJackal</wornGraphicPath>
+                        <useWornGraphicMask>true</useWornGraphicMask>
+			<layers>
+				<li>Shell</li>
+				<li>Middle</li>
+			</layers>
+			<tags>
+				<li>JackalArmor</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>JackalArmor</li>
+			</defaultOutfitTags>
+                        <useDeflectMetalEffect>true</useDeflectMetalEffect>
+		</apparel>
+                <tickerType>Normal</tickerType>
+		<thingSetMakerTags>
+		  <li>RewardSpecial</li>
+		</thingSetMakerTags>
+  </ThingDef>
+
+<!-- ======================Skirm ARMOR====================== -->
+
+	<ThingDef ParentName="ArmorHelmetMakeableBase">
+		<defName>SkirmHelmet</defName>
+		<label>skirm Helmet</label>
+		<techLevel>Spacer</techLevel>
+		<description>A Mask used by the Skirm.</description>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<researchPrerequisite>Covenant_Lesser</researchPrerequisite>
+			<recipeUsers Inherit="False">
+				<li>CovenantWorkbench</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<statBases>
+			<WorkToMake>2200</WorkToMake>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Mass>1.8</Mass>
+			<Flammability>0.4</Flammability>
+			<ArmorRating_Sharp>0.20</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.10</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.40</ArmorRating_Heat>
+                        <Insulation_Cold>15</Insulation_Cold>
+                        <Insulation_Heat>25</Insulation_Heat>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<thingCategories Inherit="False">
+			<li>CovenantGear</li>
+		</thingCategories>
+		<costList>
+			<Plasteel>25</Plasteel>
+			<Uranium>5</Uranium>
+		</costList>
+		<graphicData>
+			<texPath>Apparel/CovenantApparel/KJ/Helmet_Kig-Yar/HelmetKigYar</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+                        <shaderType>CutoutComplex</shaderType>
+			<drawSize>1.6</drawSize>
+		</graphicData>
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Apparel/CovenantApparel/KJ/Helmet_Kig-Yar/HelmetKigYar</wornGraphicPath>
+                        <useWornGraphicMask>true</useWornGraphicMask>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>KigYarHelmet</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>KigYarHelmet</li>
+			</defaultOutfitTags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+                  <options>
+                    <li>
+			<only>(129,130,133,255)</only>
+                    </li>
+                    <li>
+			<only>(122,126,112,255)</only>
+                    </li>
+                  </options>
+		</colorGenerator>
+		<thingSetMakerTags>
+			<li>RewardSpecial</li>
+		</thingSetMakerTags>
+	</ThingDef>
+
+
+	<ThingDef ParentName="ArmorMakeableBaseCov">
+		<defName>KigArmor</defName>
+		<label>T'vaoan Harness</label>
+		<techLevel>Spacer</techLevel>
+		<description>T'vaoan armor</description>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<researchPrerequisite>Covenant_Lesser</researchPrerequisite>
+			<recipeUsers Inherit="False">
+				<li>CovenantWorkbench</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<statBases>
+			<WorkToMake>1000</WorkToMake>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Mass>5</Mass>
+			<Flammability>0.4</Flammability>
+			<ArmorRating_Sharp>0.75</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.70</ArmorRating_Blunt>
+			<ArmorRating_Heat>1.0</ArmorRating_Heat>
+                        <Insulation_Cold>15</Insulation_Cold>
+                        <Insulation_Heat>25</Insulation_Heat>
+			<EquipDelay>5</EquipDelay>
+		</statBases>
+		<thingCategories Inherit="False">
+			<li>CovenantGear</li>
+		</thingCategories>
+		<costList>
+			<Plasteel>50</Plasteel>
+			<Uranium>5</Uranium>
+		</costList>
+		<graphicData>
+			<texPath>Apparel/CovenantApparel/KJ/Armor_Kig-Yar/ArmorKigYar</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+                        <shaderType>CutoutComplex</shaderType>
+			<drawSize>1.6</drawSize>
+		</graphicData>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+                                <li>Feet</li>
+                                <li>Hands</li>
+                                <li>Neck</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Apparel/CovenantApparel/KJ/Armor_Kig-Yar/ArmorKigYar</wornGraphicPath>
+                        <useWornGraphicMask>true</useWornGraphicMask>
+			<layers>
+				<li>Middle</li>
+			</layers>
+			<tags>
+				<li>ArmorKigYar</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>ArmorKigYar</li>
+			</defaultOutfitTags>
+                        <useDeflectMetalEffect>true</useDeflectMetalEffect>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+                  <options>
+                    <li>
+			<only>(129,130,133,255)</only>
+                    </li>
+                    <li>
+			<only>(122,126,112,255)</only>
+                    </li>
+                  </options>
+		</colorGenerator>
+                <tickerType>Normal</tickerType>
+		<thingSetMakerTags>
+		  <li>RewardSpecial</li>
+		</thingSetMakerTags>
+  </ThingDef>
+
+</Defs>

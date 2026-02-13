@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<HediffDef ParentName="InjuryBase">
+		<defName>PlasmaBurn</defName>
+		<label>plasma burn</label>
+        <description>plasma Burn.</description>
+    	<labelNoun>plasma burn</labelNoun>
+		<comps>
+			<li Class="HediffCompProperties_TendDuration">
+				<labelTendedWell>bandaged</labelTendedWell>
+				<labelTendedWellInner>sutured</labelTendedWellInner>
+				<labelSolidTendedWell>set</labelSolidTendedWell>
+			</li>
+			<li Class="HediffCompProperties_Infecter">
+				<infectionChance>0.1</infectionChance>
+			</li>
+			<li Class="HediffCompProperties_GetsPermanent">
+				<permanentLabel>plasma burn scar</permanentLabel>
+			</li>
+		</comps>
+		<injuryProps>
+			<painPerSeverity>0.007</painPerSeverity>
+			<averagePainPerSeverityPermanent>0.0015</averagePainPerSeverityPermanent>
+			<canMerge>true</canMerge>
+			<destroyedLabel>Burned away</destroyedLabel>
+			<destroyedOutLabel>Burned away</destroyedOutLabel>
+		</injuryProps>
+	</HediffDef>
+
+</Defs>

@@ -1,0 +1,14 @@
+{
+  "TextureModID": "thot.thecovenant",
+  "ItemDefName": "HonourStaff",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.008988764,
+  "OffY": 0.008988764,
+  "Rotation": 75.0,
+  "ScaleX": 1.9,
+  "ScaleY": 1.9,
+  "BladeStart": 0.332584262,
+  "BladeEnd": 0.858427,
+  "MeleeWeaponType": 6
+}

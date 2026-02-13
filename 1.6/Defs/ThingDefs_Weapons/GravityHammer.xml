@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    
+	<!-- Gravity Hammer -->
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>GravityHammer</defName>
+		<label>Gravity Hammer</label>
+		<description>A large hammer that serves as an excellent and powerful melee weapon.</description>
+		<techLevel>Spacer</techLevel>
+		<graphicData>
+			<texPath>Item/Equipment/WeaponRanged/Gravity_Hammer</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+                                        <drawSize>2.0</drawSize>
+		</graphicData>
+		<equippedAngleOffset>-30</equippedAngleOffset>
+		<weaponTags>
+		  <li>GavHammer</li>
+		</weaponTags>
+		<statBases>
+			<WorkToMake>150000</WorkToMake>
+			<MarketValue>3200</MarketValue>
+			<Mass>9.0</Mass>
+		</statBases>
+		<costList>
+		  <Steel>85</Steel>
+		  <ComponentIndustrial>15</ComponentIndustrial>
+		  <Plasteel>20</Plasteel>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>Covenant_Jiralhanae</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>10</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>CovenantWorkbench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<tools>
+		  <li>
+			<label>head</label>
+			<capacities>
+			  <li>GravityHammer_Blunt</li>
+			</capacities>
+			<power>40</power>
+			<cooldownTime>1.45</cooldownTime>
+		  </li>
+		  <li>
+			<label>blade</label>
+			<capacities>
+			  <li>Cut</li>
+			</capacities>
+			<power>40</power>
+			<cooldownTime>1.95</cooldownTime>
+		  </li>
+		</tools>
+    </ThingDef>
+  
+</Defs>

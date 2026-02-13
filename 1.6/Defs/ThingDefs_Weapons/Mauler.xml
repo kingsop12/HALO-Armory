@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <!-- Mauler --> 
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_MaulerShot</defName>
+    <label>mauler shot</label>
+    <graphicData>
+		<texPath>Projectile/MaulerShotProjectile</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>18</damageAmountBase>
+	  <stoppingPower>1.5</stoppingPower>
+      <speed>50</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Mauler</defName>
+    <label>Type 52 Mauler</label>
+    <description>Jiralhanae pre-covenant technology, comparable to a handheld shotgun. Very effective at close range.</description>
+    <graphicData>
+		<texPath>Item/Equipment/WeaponRanged/Mauler</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+                <drawSize>1.3</drawSize>
+    </graphicData>
+	<soundInteract>Interact_Revolver</soundInteract>
+    <statBases>
+      <WorkToMake>500</WorkToMake>
+	  <Mass>3.2</Mass>
+	  <AccuracyTouch>1.00</AccuracyTouch>
+      <AccuracyShort>0.90</AccuracyShort>
+      <AccuracyMedium>0.55</AccuracyMedium>
+      <AccuracyLong>0.05</AccuracyLong>
+	  <RangedWeapon_Cooldown>0.75</RangedWeapon_Cooldown>
+    </statBases>
+	<costList>
+      <Steel>85</Steel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+    </costList>
+	<recipeMaker>
+		<researchPrerequisite>Covenant_Jiralhanae</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>5</Crafting>
+		</skillRequirements>
+		<recipeUsers Inherit="False">
+			<li>CovenantWorkbench</li>
+		</recipeUsers>
+	</recipeMaker>
+	<weaponTags>
+      <li>Cov_Mauler</li>
+    </weaponTags>
+	<equippedAngleOffset>0</equippedAngleOffset>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_MaulerShot</defaultProjectile>
+        <warmupTime>0.90</warmupTime>
+        <range>9</range>
+        <burstShotCount>1</burstShotCount>
+        <ticksBetweenBurstShots>30</ticksBetweenBurstShots>
+        <soundCast>MaulerShot</soundCast>
+		<soundCastTail>GunTail_Medium</soundCastTail>
+		<muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+	<tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+</Defs>

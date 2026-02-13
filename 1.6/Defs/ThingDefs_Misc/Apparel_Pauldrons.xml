@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- ==================================== Pauldrons ===================================== -->
+
+	<ThingDef ParentName="ArmorMakeableBaseCov">
+		<defName>Cov_MinorPauldron</defName>
+		<label>Minor Pauldrons</label>
+		<description>Test.</description>
+		<techLevel>Spacer</techLevel>	
+
+    <recipeMaker>
+		<researchPrerequisite>Covenant_Sangheili</researchPrerequisite>
+		<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+		<skillRequirements>
+			<Crafting>4</Crafting>
+		</skillRequirements>
+		<displayPriority>225</displayPriority>
+    </recipeMaker>
+
+	<graphicData>
+		<texPath>Apparel/CovenantApparel/Elite/MinorP/ElitePauldron1</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+                <shaderType>CutoutComplex</shaderType>			    
+	</graphicData>
+
+	<statBases>
+		<WorkToMake>6000</WorkToMake>
+		<MaxHitPoints>200</MaxHitPoints>
+		<Mass>2</Mass>
+		<Flammability>0.6</Flammability>
+		<ArmorRating_Sharp>0.55</ArmorRating_Sharp>
+		<ArmorRating_Blunt>0.08</ArmorRating_Blunt>
+		<ArmorRating_Heat>0.10</ArmorRating_Heat>
+		<Insulation_Cold>3.5</Insulation_Cold>
+		<Insulation_Heat>1</Insulation_Heat>
+		<EquipDelay>2</EquipDelay>
+	</statBases>	
+
+    <equippedStatOffsets>
+		<MoveSpeed>-0.08</MoveSpeed>
+    </equippedStatOffsets>
+
+    <thingCategories>
+		<li>ApparelArmor</li>
+    </thingCategories>
+
+    <costList>
+		<Cloth>20</Cloth>
+		<Steel>40</Steel>
+		<ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
+
+	<generateAllowChance>0.15</generateAllowChance>
+	
+    <apparel>
+		<countsAsClothingForNudity>false</countsAsClothingForNudity>
+		<bodyPartGroups>
+			<li>Arms</li>
+			<li>Neck</li>
+                        <li>Shoulders</li>
+		</bodyPartGroups>
+		<wornGraphicPath>Apparel/CovenantApparel/Elite/MinorP/ElitePauldron1</wornGraphicPath>
+                <useWornGraphicMask>true</useWornGraphicMask>
+		<renderSkipFlags>
+			<li>None</li>
+		</renderSkipFlags>		
+		<layers>
+			<li>Shell</li>
+		</layers>
+		<tags>
+			<li>MinorPauldron</li>
+		</tags>
+		<defaultOutfitTags>
+			<li>Soldier</li>
+		</defaultOutfitTags>
+	</apparel>
+	
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+			<only>(57,82,146,255)</only>
+        </li>
+        <li>
+			<only>(57,82,146,255)</only>
+        </li>
+      </options>
+    </colorGenerator>
+
+    <tradeability>Sellable</tradeability>	
+    <tradeTags>
+		<li>Clothing</li>
+		<li>Armor</li>
+    </tradeTags>	
+	
+	</ThingDef>
+
+
+
+	<ThingDef ParentName="ArmorMakeableBaseCov">
+		<defName>Cov_MajorPauldron</defName>
+		<label>Major Pauldrons</label>
+		<description>Test.</description>
+		<techLevel>Spacer</techLevel>	
+
+    <recipeMaker>
+		<researchPrerequisite>Covenant_Sangheili</researchPrerequisite>
+		<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+		<skillRequirements>
+			<Crafting>4</Crafting>
+		</skillRequirements>
+		<displayPriority>225</displayPriority>
+    </recipeMaker>
+
+	<graphicData>
+		<texPath>Apparel/CovenantApparel/Elite/MajorP/ElitePauldron2</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+                <shaderType>CutoutComplex</shaderType>			    
+	</graphicData>
+
+	<statBases>
+		<WorkToMake>6000</WorkToMake>
+		<MaxHitPoints>200</MaxHitPoints>
+		<Mass>2</Mass>
+		<Flammability>0.6</Flammability>
+		<ArmorRating_Sharp>0.55</ArmorRating_Sharp>
+		<ArmorRating_Blunt>0.08</ArmorRating_Blunt>
+		<ArmorRating_Heat>0.10</ArmorRating_Heat>
+		<Insulation_Cold>3.5</Insulation_Cold>
+		<Insulation_Heat>1</Insulation_Heat>
+		<EquipDelay>2</EquipDelay>
+	</statBases>	
+
+    <equippedStatOffsets>
+		<MoveSpeed>-0.08</MoveSpeed>
+    </equippedStatOffsets>
+
+    <thingCategories>
+		<li>ApparelArmor</li>
+    </thingCategories>
+
+    <costList>
+		<Cloth>20</Cloth>
+		<Steel>40</Steel>
+		<ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
+
+	<generateAllowChance>0.15</generateAllowChance>
+	
+    <apparel>
+		<countsAsClothingForNudity>false</countsAsClothingForNudity>
+		<bodyPartGroups>
+			<li>Arms</li>
+			<li>Neck</li>
+                        <li>Shoulders</li>
+		</bodyPartGroups>
+		<wornGraphicPath>Apparel/CovenantApparel/Elite/MajorP/ElitePauldron2</wornGraphicPath>
+                <useWornGraphicMask>true</useWornGraphicMask>
+		<renderSkipFlags>
+			<li>None</li>
+		</renderSkipFlags>		
+		<layers>
+			<li>Shell</li>
+		</layers>
+		<tags>
+			<li>MajorPauldron</li>
+		</tags>
+		<defaultOutfitTags>
+			<li>Soldier</li>
+		</defaultOutfitTags>
+	</apparel>
+	
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+			<only>(159,9,14,255)</only>
+        </li>
+        <li>
+			<only>(159,9,14,255)</only>
+        </li>
+      </options>
+    </colorGenerator>
+
+    <tradeability>Sellable</tradeability>	
+    <tradeTags>
+		<li>Clothing</li>
+		<li>Armor</li>
+    </tradeTags>	
+	
+	</ThingDef>			
+
+
+	<ThingDef ParentName="ArmorMakeableBaseCov">
+		<defName>Cov_KigPauldron</defName>
+		<label>KigYar Pauldrons</label>
+		<description>Test.</description>
+		<techLevel>Spacer</techLevel>	
+
+    <recipeMaker>
+		<researchPrerequisite>Covenant_Lesser</researchPrerequisite>
+		<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+		<skillRequirements>
+			<Crafting>4</Crafting>
+		</skillRequirements>
+		<displayPriority>225</displayPriority>
+    </recipeMaker>
+
+	<graphicData>
+		<texPath>Apparel/CovenantApparel/KJ/Pauldron_Kig-Yar/PauldronKigYar</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+                <shaderType>CutoutComplex</shaderType>			    
+	</graphicData>
+
+	<statBases>
+		<WorkToMake>6000</WorkToMake>
+		<MaxHitPoints>200</MaxHitPoints>
+		<Mass>2</Mass>
+		<Flammability>0.6</Flammability>
+		<ArmorRating_Sharp>0.55</ArmorRating_Sharp>
+		<ArmorRating_Blunt>0.08</ArmorRating_Blunt>
+		<ArmorRating_Heat>0.10</ArmorRating_Heat>
+		<Insulation_Cold>3.5</Insulation_Cold>
+		<Insulation_Heat>1</Insulation_Heat>
+		<EquipDelay>2</EquipDelay>
+	</statBases>	
+
+    <equippedStatOffsets>
+		<MoveSpeed>-0.08</MoveSpeed>
+    </equippedStatOffsets>
+
+    <thingCategories>
+		<li>ApparelArmor</li>
+    </thingCategories>
+
+    <costList>
+		<Cloth>20</Cloth>
+		<Steel>40</Steel>
+		<ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
+
+	<generateAllowChance>0.15</generateAllowChance>
+	
+    <apparel>
+		<countsAsClothingForNudity>false</countsAsClothingForNudity>
+		<bodyPartGroups>
+			<li>Arms</li>
+			<li>Neck</li>
+                        <li>Shoulders</li>
+		</bodyPartGroups>
+		<wornGraphicPath>Apparel/CovenantApparel/KJ/Pauldron_Kig-Yar/PauldronKigYar</wornGraphicPath>
+                <useWornGraphicMask>true</useWornGraphicMask>
+		<renderSkipFlags>
+			<li>None</li>
+		</renderSkipFlags>		
+		<layers>
+			<li>Shell</li>
+		</layers>
+		<tags>
+			<li>Cov_KigPauldron</li>
+		</tags>
+		<defaultOutfitTags>
+			<li>Soldier</li>
+		</defaultOutfitTags>
+	</apparel>
+	
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+			<only>(129,130,133,255)</only>
+        </li>
+        <li>
+			<only>(129,130,133,255)</only>
+        </li>
+      </options>
+    </colorGenerator>
+
+    <tradeability>Sellable</tradeability>	
+    <tradeTags>
+		<li>Clothing</li>
+		<li>Armor</li>
+    </tradeTags>	
+	
+	</ThingDef>
+
+</Defs>

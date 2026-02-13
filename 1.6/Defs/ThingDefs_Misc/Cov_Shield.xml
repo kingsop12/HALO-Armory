@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+      <Defs>
+	<ThingDef Name="Cov_Apparel_BaseShield" ParentName="BaseMeleeWeapon_Blunt_Quality" Abstract="True">
+		<techLevel>Spacer</techLevel>
+		<thingClass>VEF.Apparels.Apparel_Shield</thingClass>
+		<tradeability>Sellable</tradeability>
+		<apparel>
+			<careIfWornByCorpse>false</careIfWornByCorpse>
+			<careIfDamaged>false</careIfDamaged>
+			<wearPerDay>0</wearPerDay>
+			<bodyPartGroups>
+				<li>LeftHand</li>
+				<li>Arms</li>
+			</bodyPartGroups>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<layers>
+				<li>VFEC_OuterShell</li>
+			</layers>
+		</apparel>
+		<thingCategories Inherit="False">
+			<li>CovenantGear</li>
+		</thingCategories>
+		<recipeMaker>
+			<researchPrerequisite>Covenant_Sangheili</researchPrerequisite>
+			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>-2</ShootingAccuracyPawn>
+			<MeleeHitChance>1.2</MeleeHitChance>
+			<MeleeDodgeChance>5</MeleeDodgeChance>
+		</equippedStatOffsets>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<tools>
+			<li>
+				<label>centre</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	<ThingDef ParentName="Cov_Apparel_BaseShield">
+		<defName>Cov_PDG</defName>
+		<label>Point defense gauntlet</label>
+		<description>A Arm-held energy shields mainly used by the Kig-Yar serving in the Covenant for protection from enemy fire or close to mid-range explosions.</description>
+		<graphicData>
+			<texPath>Item/Equipment/Shield/Jackal_shield</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<costList>
+			<Steel>80</Steel>
+		</costList>
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<Flammability>0.1</Flammability>
+			<ArmorRating_Sharp>0.45</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.85</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.9</ArmorRating_Heat>
+			<WorkToMake>3500</WorkToMake>
+			<Mass>2.2</Mass>
+		</statBases>
+		<comps>
+			<li Class="VEF.Apparels.CompProperties_Shield">
+				<shieldTags>
+					<li>CovPDG</li>
+				</shieldTags>
+				<useDeflectMetalEffect>true</useDeflectMetalEffect>
+				<coveredBodyPartGroups>
+					<li>Neck</li>
+					<li>Torso</li>
+					<li>Arms</li>
+					<li>Hands</li>
+					<li>Legs</li>
+				</coveredBodyPartGroups>
+				<offHandGraphicData>
+					<texPath>Item/Equipment/Shield/Jackal_shield</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>1.6</drawSize>
+				</offHandGraphicData>
+				<offHandHoldOffset>
+					<northDefault>
+						<offset>(0, 0, 0.2)</offset>
+						<behind>true</behind>
+					</northDefault>
+					<east>
+						<offset>(-0.1, 0, 0.2)</offset>
+						<behind>true</behind>
+					</east>
+					<south>
+						<offset>(-0.1, -0.04, 0.2)</offset>
+					</south>
+					<west>
+						<offset>(0.1, 0, 0.2)</offset>
+					</west>
+				</offHandHoldOffset>
+			</li>
+			<li>
+				<compClass>CompColorable</compClass>
+			</li>
+		</comps>
+		<tradeTags>
+			<li>Armor</li>
+		</tradeTags>
+	</ThingDef>
+</Defs>

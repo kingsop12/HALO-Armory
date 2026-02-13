@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef Name="VWE_BaseLaserGunUltra" Abstract="True" ParentName="BaseWeapon">
+		<techLevel>Ultra</techLevel>
+		<smeltable>true</smeltable>
+		<tradeability>All</tradeability>
+		<relicChance>2</relicChance>
+		<thingCategories>
+			<li>WeaponsRanged</li>
+		</thingCategories>
+		<inspectorTabs>
+			<li>ITab_Art</li>
+		</inspectorTabs>
+		<tradeTags>
+			<li>SpacerGun</li>
+		</tradeTags>
+		<statBases>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtWeaponGun</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+		</comps>
+		<thingSetMakerTags Inherit="False">
+			<li>RewardStandardLowFreq</li>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+	</ThingDef>
+
+	<!-- ====================== Laser Sniper Rifle  ===================== -->
+	<ThingDef ParentName="VWEL_Bullet_LaserGeneric" Class="VEF.Weapons.LaserBeamDef">
+		<defName>Cov_Bullet_BeamRifle</defName>
+		<label>precise laser shot</label>
+		<description>A focused, long range laser beam.</description>
+		<textures>
+			<li>Projectile/Beam</li>
+		</textures>
+		<seam>0.1</seam>
+		<causefireChance>0.2</causefireChance>
+		<beamWidth>1.5</beamWidth>
+		<lifetime>120</lifetime>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>48</damageAmountBase>
+			<armorPenetrationBase>1</armorPenetrationBase>
+			<stoppingPower>3</stoppingPower>
+		</projectile>
+	</ThingDef>
+	<ThingDef ParentName="VWE_BaseLaserGunUltra">
+		<defName>Beam_Rifle</defName>
+		<thingClass>VEF.Weapons.LaserGun</thingClass>
+		<label>Type-50 Sniper Rifle</label>
+		<description>The Type-50 Sniper Rifle System otherwise known as the Particle Beam Rifle, is a Covenant long-range weapon and the counterpart of the UNSC Sniper Rifle.</description>
+		<graphicData>
+			<texPath>Item/Equipment/WeaponRanged/BeamSniper</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<statBases>
+			<WorkToMake>120500</WorkToMake>
+			<MarketValue>3600</MarketValue>
+			<Mass>3.8</Mass>
+			<AccuracyTouch>0.64</AccuracyTouch>
+			<AccuracyShort>0.85</AccuracyShort>
+			<AccuracyMedium>0.98</AccuracyMedium>
+			<AccuracyLong>1.0</AccuracyLong>
+			<RangedWeapon_Cooldown>2.2</RangedWeapon_Cooldown>
+		</statBases>
+                <recipeMaker>
+                  <researchPrerequisite>Covenant_Sangheili</researchPrerequisite>
+                  <skillRequirements>
+                    <Crafting>9</Crafting>
+                  </skillRequirements>
+                  <recipeUsers Inherit="False">
+			  <li>CovenantWorkbench</li>
+                  </recipeUsers>
+                </recipeMaker>
+		<costList>
+			<Steel>65</Steel>
+			<Plasteel>70</Plasteel>
+			<ComponentSpacer>8</ComponentSpacer>
+		</costList>
+		<techLevel>Ultra</techLevel>
+		<weaponTags Inherit="False">
+			<li>Cov_Sniper</li>
+                        <li>Cov_HighTier</li>
+		</weaponTags>
+		<generateCommonality>0.1</generateCommonality>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.15</MoveSpeed>
+			<!-- drawback -->
+		</equippedStatOffsets>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<label>Standard</label>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Cov_Bullet_BeamRifle</defaultProjectile>
+				<warmupTime>4.6</warmupTime>
+				<range>44.9</range>
+				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>BeamRifleShot</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>14</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="VEF.Weapons.CompProperties_LaserCapacitor">
+				<UiIconPath>UI/EnableWarmup/EnableWarmup</UiIconPath>
+				<WarmUpReductionPerShot>1.8</WarmUpReductionPerShot>
+				<Overheats>true</Overheats>
+				<OverheatDestroys>false</OverheatDestroys>
+				<OverheatBlastDamageDef>Burn</OverheatBlastDamageDef>
+				<OverheatBlastExtraDamage>6</OverheatBlastExtraDamage>
+				<OverheatBlastRadius>1.5</OverheatBlastRadius>
+				<OverheatChance>0.06</OverheatChance>
+				<OverheatMoteThrown>HeatGlow</OverheatMoteThrown>
+				<OverheatMoteSize>1</OverheatMoteSize>
+			</li>
+		</comps>
+		<tools>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>1.8</cooldownTime>
+			</li>
+			<li>
+				<label>grip</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>6</power>
+				<cooldownTime>1.9</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+</Defs>

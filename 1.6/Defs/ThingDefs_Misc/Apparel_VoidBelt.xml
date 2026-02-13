@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="ApparelBaseCov">
+    <defName>Cov_VoidBelt</defName>
+    <label>Void belt</label>
+    <description>The Void belt will keep you alive in the Void as long as the shield doesn't break.</description>
+    <thingClass>Apparel</thingClass>
+    <graphicData>
+      <texPath>Item/Equipment/CovShieldBelt/VoidBelt</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <tickerType>Normal</tickerType>
+    <techLevel>Spacer</techLevel>
+    <statBases>
+      <Mass>3</Mass>
+      <WorkToMake>20000</WorkToMake>
+      <Flammability>0.4</Flammability>
+      <EnergyShieldRechargeRate>0.13</EnergyShieldRechargeRate>
+      <EnergyShieldEnergyMax>4</EnergyShieldEnergyMax>
+      <EquipDelay>2</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+     <VacuumResistance MayRequire="ludeon.rimworld.odyssey">0.69</VacuumResistance>
+    </equippedStatOffsets>
+    <thingSetMakerTags>
+      <li>RewardStandardMidFreq</li>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <costList>
+      <Steel>50</Steel>
+      <ComponentSpacer>3</ComponentSpacer>
+      <Plasteel>50</Plasteel>
+    </costList>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedBelt</unfinishedThingDef>
+      <researchPrerequisite>Covenant_Jiralhanae</researchPrerequisite>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <recipeUsers>
+        <li>CovenantWorkbench</li>
+      </recipeUsers>
+      <useIngredientsForColor>false</useIngredientsForColor>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <displayPriority>300</displayPriority>
+    </recipeMaker>
+    <thingCategories>
+      <li>ApparelUtility</li>
+    </thingCategories>
+    <apparel>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
+      <careIfDamaged>false</careIfDamaged>
+      <wearPerDay>0</wearPerDay>
+      <bodyPartGroups>
+        <li>Waist</li>
+        <li>FullHead</li>
+        <li>Torso</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>Legs</li>
+        <li>Feet</li>
+        <li>Hands</li>
+        <li>Neck</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Belt</li>
+      </layers>
+      <tags>
+        <li>VoidBelt</li>
+      </tags>
+      <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>(0.33,0.33,0.33,1)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(0.65,0.65,0.65,1)</only>
+        </li>
+        <li>
+          <weight>6</weight>
+          <min>(0.3,0.3,0.3,1)</min>
+          <max>(0.5,0.5,0.5,1)</max>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(0.9,0.9,0.9,1)</only>
+        </li>
+      </options>
+    </colorGenerator>
+    <comps>
+      <li Class="CompProperties_Shield">
+        <startingTicksToReset>6400</startingTicksToReset>
+        <blocksRangedWeapons>true</blocksRangedWeapons>
+      </li>
+    </comps>
+    <tradeTags>
+      <li>Armor</li>
+    </tradeTags>
+  </ThingDef>
+
+</Defs>

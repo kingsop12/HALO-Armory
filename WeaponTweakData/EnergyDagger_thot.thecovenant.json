@@ -1,0 +1,13 @@
+{
+  "TextureModID": "thot.thecovenant",
+  "ItemDefName": "EnergyDagger",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.278651685,
+  "ScaleX": 0.9,
+  "ScaleY": 0.9,
+  "HandsMode": 1,
+  "BladeStart": 0.0988764,
+  "BladeEnd": 0.5662921,
+  "MeleeWeaponType": 6
+}
