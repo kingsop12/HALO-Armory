@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- ======================MINOR ARMOR====================== -->
+
+	<ThingDef ParentName="ArmorHelmetMakeableBase">
+		<defName>BruteMinorHelm</defName>
+		<label>Brute Minor Helmet</label>
+		<techLevel>Spacer</techLevel>
+		<description>A Crude and sturdy desgined helmet ment to fit the lower ranks of Covenant Brute forces.</description>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<researchPrerequisite>Covenant_Jiralhanae</researchPrerequisite>
+			<recipeUsers Inherit="False">
+				<li>CovenantWorkbench</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<statBases>
+			<WorkToMake>1200</WorkToMake>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Mass>1.8</Mass>
+			<Flammability>0.4</Flammability>
+			<ArmorRating_Sharp>0.76</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.34</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.56</ArmorRating_Heat>
+                        <Insulation_Cold>15</Insulation_Cold>
+                        <Insulation_Heat>25</Insulation_Heat>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<thingCategories Inherit="False">
+			<li>CovenantGear</li>
+		</thingCategories>
+		<costList>
+			<Plasteel>20</Plasteel>
+			<Steel>100</Steel>
+		</costList>
+		<graphicData>
+			<texPath>Apparel/CovenantApparel/Brute/Helmet/HelmetBruted</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.6</drawSize>
+		</graphicData>
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Apparel/CovenantApparel/Brute/Helmet/HelmetBrute</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>BruteMinorHelmet</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>BruteMinorHelmet</li>
+                                <li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<thingSetMakerTags>
+			<li>RewardSpecial</li>
+		</thingSetMakerTags>
+	</ThingDef>
+
+	<ThingDef ParentName="ArmorMakeableBaseCov">
+		<defName>BruteMinor</defName>
+		<label>Brute Minor Armor</label>
+		<techLevel>Spacer</techLevel>
+		<description>For the lower ranks of Covenant Brute forces.</description>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<researchPrerequisite>Covenant_Jiralhanae</researchPrerequisite>
+			<recipeUsers Inherit="False">
+				<li>CovenantWorkbench</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<statBases>
+			<WorkToMake>1000</WorkToMake>
+			<MaxHitPoints>250</MaxHitPoints>
+			<Mass>5</Mass>
+			<Flammability>0.4</Flammability>
+			<ArmorRating_Sharp>0.70</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.40</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.39</ArmorRating_Heat>
+                        <Insulation_Cold>15</Insulation_Cold>
+                        <Insulation_Heat>25</Insulation_Heat>
+			<EquipDelay>5</EquipDelay>
+		</statBases>
+		<thingCategories Inherit="False">
+			<li>CovenantGear</li>
+		</thingCategories>
+		<costList>
+			<Plasteel>100</Plasteel>
+			<Steel>50</Steel>
+		</costList>
+		<graphicData>
+			<texPath>Apparel/CovenantApparel/Brute/Armor/ArmorPlateBruted</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.6</drawSize>
+		</graphicData>
+                <tickerType>Normal</tickerType>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+                                <li>Feet</li>
+                                <li>Hands</li>
+                                <li>Neck</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Apparel/CovenantApparel/Brute/Armor/ArmorPlateBrute</wornGraphicPath>
+			<layers>
+				<li>Shell</li>
+				<li>Middle</li>
+			</layers>
+			<tags>
+				<li>BruteMinorArmor</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>BruteMinorArmor</li>
+                                <li>Soldier</li>
+			</defaultOutfitTags>
+                        <useDeflectMetalEffect>true</useDeflectMetalEffect>
+		</apparel>
+                <tickerType>Normal</tickerType>
+		<comps>
+                  <li Class="VEF.Apparels.CompProperties_ShieldBubble">
+                   <compClass>VEF.Apparels.CompShieldBubble</compClass>
+                   <blockRangedAttack>true</blockRangedAttack>
+                   <blockMeleeAttack>false</blockMeleeAttack>
+                   <showWhenDrafted>false</showWhenDrafted>
+                   <showOnHostiles>false</showOnHostiles>
+                   <showOnNeutralInCombat>false</showOnNeutralInCombat>
+                   <shieldTexPath>Other/ShieldBubble</shieldTexPath>
+                   <EnergyShieldRechargeRate>0.01</EnergyShieldRechargeRate>
+                   <EnergyShieldEnergyMax>50</EnergyShieldEnergyMax>
+                   <minShieldSize>1.4</minShieldSize>
+                   <maxShieldSize>1.8</maxShieldSize>
+                  <disableRotation>true</disableRotation>
+                  <chargeFullyWhenMade>true</chargeFullyWhenMade>
+                </li>
+		</comps>
+		<thingSetMakerTags>
+		  <li>RewardSpecial</li>
+		</thingSetMakerTags>
+  </ThingDef>
+
+</Defs>
