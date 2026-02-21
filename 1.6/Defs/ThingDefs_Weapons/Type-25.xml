@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BaseMakeableGun" Name="CovenantPlasmaRifle">
+		<defName>Cov_Type25R</defName>
+		<label>Type 25 Rifle</label>
+		<description>The Type-25 Rifle, also known as the Covenant Type-25 Directed Energy Rifle, is a Covenant infantry firearm.</description>
+		<graphicData>
+			<texPath>Item/Equipment/WeaponRanged/Type25_Rifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_ChargeRifle</soundInteract>
+		<statBases>
+			<WorkToMake>500</WorkToMake>
+			<Mass>2.2</Mass>
+			<AccuracyTouch>0.50</AccuracyTouch>
+			<AccuracyShort>0.80</AccuracyShort>
+			<AccuracyMedium>0.75</AccuracyMedium>
+			<AccuracyLong>0.40</AccuracyLong>
+			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_PlasmaProjectile</defaultProjectile>
+				<warmupTime>0.20</warmupTime>
+				<range>31</range>
+				<ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+				<burstShotCount>4</burstShotCount>
+				<soundCast>PlasmaRifle_Shot</soundCast>
+				<soundCastTail>GunTail_Light</soundCastTail>
+				<muzzleFlashScale>7</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>1.5</cooldownTime>
+			</li>
+		</tools>
+		<weaponTags>
+			<li>Cov_PlasmaRifle</li>
+                        <li>Cov_ELowTier</li>
+		</weaponTags>
+		<recipeMaker>
+			<researchPrerequisite>Covenant_Sangheili</researchPrerequisite>
+			<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+            <recipeUsers Inherit="False">
+                <li>CovenantWorkbench</li>
+            </recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Steel>150</Steel>
+			<Plasteel>120</Plasteel>
+			<ComponentIndustrial>8</ComponentIndustrial>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_PlasmaProjectile</defName>
+		<label>Plasma shot</label>
+		<graphicData>
+			<texPath>Projectile/PlasmaProjectile</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>1.7</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>Plasma_Damage</damageDef>
+			<damageAmountBase>6</damageAmountBase>
+			<armorPenetrationBase>0.15</armorPenetrationBase>
+			<stoppingPower>0.2</stoppingPower>
+			<speed>90</speed>
+		</projectile>
+	</ThingDef>
+
+</Defs>

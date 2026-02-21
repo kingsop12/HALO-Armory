@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+ 
+  <!-- Brute Shot --> 
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_BruteShot</defName>
+    <label>Brute Shot</label>
+    <graphicData>
+		<texPath>Projectile/BruteShotProjectile</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<shaderType>TransparentPostLight</shaderType>
+	</graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>Bomb</damageDef>
+      <damageAmountBase>15</damageAmountBase>
+	  <stoppingPower>3</stoppingPower>
+      <speed>40</speed>
+      <explosionRadius>1.5</explosionRadius>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Cov_BruteShot</defName>
+    <label>Brute Shot</label>
+    <description>Covenant grenade-launcher, favored exclusively by the Brutes. The blade attached to the underside makes it useful in melee combat as well.</description>
+    <graphicData>
+		<texPath>Item/Equipment/WeaponRanged/Brute_Shot</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+                <drawSize>1.6</drawSize>
+    </graphicData>
+	<soundInteract>Interact_Shotgun</soundInteract>
+    <statBases>
+      <WorkToMake>4500</WorkToMake>
+	  <Mass>5.2</Mass>
+	  <AccuracyTouch>0.90</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.35</AccuracyMedium>
+      <AccuracyLong>0.15</AccuracyLong>
+	  <RangedWeapon_Cooldown>2.33</RangedWeapon_Cooldown>
+    </statBases>
+	<costList>
+      <Steel>85</Steel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+    </costList>
+	<recipeMaker>
+		<researchPrerequisite>Covenant_Jiralhanae</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>7</Crafting>
+		</skillRequirements>
+		<recipeUsers Inherit="False">
+			<li>CovenantWorkbench</li>
+		</recipeUsers>
+	</recipeMaker>
+	<weaponTags>
+      <li>BruteShot</li>
+      <li>Cov_BruteWep</li>
+    </weaponTags>
+    <verbs>
+	  <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_BruteShot</defaultProjectile>
+		<forcedMissRadius>0.1</forcedMissRadius>
+        <warmupTime>2.5</warmupTime>
+        <range>24</range>
+        <burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+        <soundCast>BruteShotFire</soundCast>
+		<soundCastTail>GunTail_Heavy</soundCastTail>
+		<muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+	<tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>Cut</li>
+          <li>Poke</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+</Defs>

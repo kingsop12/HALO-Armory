@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Spiker -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_SpikerShotR</defName>
+    <label>spiker Shot</label>
+    <graphicData>
+		<texPath>Projectile/SpikeProjectile</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>8</damageAmountBase>
+      <armorPenetrationBase>0.20</armorPenetrationBase>
+	  <stoppingPower>2</stoppingPower>
+      <speed>60</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>SpikerR</defName>
+    <label>Spike rifle</label>
+    <description>Burst-automatic, magazine-fed rail type weapon Packs a Punch at both range and melee.</description>
+    <graphicData>
+		<texPath>Item/Equipment/WeaponRanged/SpikerR</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+                <drawSize>1.5</drawSize>
+    </graphicData>
+	<soundInteract>Interact_Revolver</soundInteract>
+    <statBases>
+      <WorkToMake>200</WorkToMake>
+	  <Mass>3.1</Mass>
+	  <AccuracyTouch>0.88</AccuracyTouch>
+      <AccuracyShort>0.85</AccuracyShort>
+      <AccuracyMedium>0.75</AccuracyMedium>
+      <AccuracyLong>0.65</AccuracyLong>
+	  <RangedWeapon_Cooldown>1.36</RangedWeapon_Cooldown>
+    </statBases>
+	<costList>
+      <Steel>65</Steel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+    </costList>
+	<recipeMaker>
+		<researchPrerequisite>Covenant_Jiralhanae</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>5</Crafting>
+		</skillRequirements>
+                <recipeUsers Inherit="False">
+			<li>CovenantWorkbench</li>
+		</recipeUsers>
+	</recipeMaker>
+	<weaponTags>
+      <li>SpikerR</li>
+      <li>Cov_BruteWep</li>
+    </weaponTags>
+	<equippedAngleOffset>0</equippedAngleOffset>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_SpikerShotR</defaultProjectile>
+        <warmupTime>0.90</warmupTime>
+        <range>30</range>
+        <burstShotCount>4</burstShotCount>
+        <ticksBetweenBurstShots>9</ticksBetweenBurstShots>
+        <soundCast>SpikerShot</soundCast>
+		<soundCastTail>GunTail_Medium</soundCastTail>
+		<muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+	<tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.7</cooldownTime>
+      </li>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>Cut</li>
+          <li>Poke</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+</Defs>
