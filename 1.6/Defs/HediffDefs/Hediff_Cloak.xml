@@ -20,6 +20,37 @@
         <stages />
     </HediffDef>
 
+	  <!-- Elite -->
+  <PawnKindDef Name="Cov_CEliteBase" ParentName="Cov_EliteBase" Abstract="True">
+    <label>Sangheili</label>
+    <combatPower>30</combatPower>
+    <initialResistanceRange>25~44</initialResistanceRange>
+    <initialWillRange>25~50</initialWillRange>
+    <isFighter>true</isFighter>
+    <gearHealthRange>0.6~2</gearHealthRange>
+    <apparelMoney>40000~60000</apparelMoney>
+    <xenotypeSet>
+      <xenotypeChances>
+        <Cov_Sangheili>1.0</Cov_Sangheili>
+      </xenotypeChances>
+    </xenotypeSet>
+    <apparelAllowHeadgearChance>0.9</apparelAllowHeadgearChance>
+    <techHediffsChance>0.04</techHediffsChance>
+    <techHediffsMoney>2200~7000</techHediffsMoney>
+    <backstoryCategories>
+      <li>Offworld</li>
+      <li>Outlander</li>
+    </backstoryCategories>
+    <apparelTags>
+      <li>UndersuitE</li>
+    </apparelTags>
+    <maxGenerationAge>45</maxGenerationAge>
+    <disallowedTraits>
+      <li>BodyPurist</li>
+      <li>Brawler</li>
+    </disallowedTraits>
+  </PawnKindDef>
+
   <HediffDef>
     <defName>Elite_Invisibility</defName>
     <label>Cloak of Elite</label>
@@ -41,7 +72,7 @@
 		</stages>
   </HediffDef>
 
-  <PawnKindDef ParentName="Cov_MEliteBase">
+  <PawnKindDef ParentName="Cov_CEliteBase">
     <defName>Cov_InvsElite</defName>
     <label>Steath Elite</label>
     <combatPower>120</combatPower>
@@ -66,5 +97,6 @@
       </li>
     </startingHediffs>
   </PawnKindDef>
+
 
 </Defs>
