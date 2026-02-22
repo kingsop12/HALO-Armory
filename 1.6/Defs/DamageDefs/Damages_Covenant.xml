@@ -34,7 +34,7 @@
 	<defaultStoppingPower>0.5</defaultStoppingPower>
     <defaultArmorPenetration>0.10</defaultArmorPenetration>
     <buildingDamageFactor>0.1</buildingDamageFactor>
-    <plantDamageFactor>8</plantDamageFactor>
+    <plantDamageFactor>5</plantDamageFactor>
     <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
     <explosionHeatEnergyPerCell>0</explosionHeatEnergyPerCell>
     <explosionCellFleck>BlastDry</explosionCellFleck>
@@ -98,3 +98,4 @@
   </DamageDef>
 
 </Defs>
+
