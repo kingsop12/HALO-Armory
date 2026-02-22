@@ -71,7 +71,7 @@
         <defaultProjectile>Bullet_Needlesmall</defaultProjectile>
         <warmupTime>0.1</warmupTime>
         <range>20</range>
-		<ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+		<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
 		<burstShotCount>3</burstShotCount>
                 <soundCast>Needler_Shot</soundCast>
 		<soundCastTail>GunTail_Light</soundCastTail>
@@ -81,3 +81,4 @@
   </ThingDef>	
 
 </Defs>
+
