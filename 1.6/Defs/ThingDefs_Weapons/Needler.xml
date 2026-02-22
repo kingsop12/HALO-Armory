@@ -63,7 +63,6 @@
 	<weaponTags>
       <li>Cov_Needler</li>
       <li>Cov_HighTier</li>
-      <li>Cov_HighGruntWep</li>
     </weaponTags>
     <verbs>
       <li>
@@ -80,4 +79,5 @@
       </li>
     </verbs>
   </ThingDef>	
+
 </Defs>
