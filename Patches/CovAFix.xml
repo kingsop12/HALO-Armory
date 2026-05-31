@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+<Operation Class="PatchOperationAdd">
+<xpath>/Defs/ThingDef[defName = "GruntMask"]/apparel</xpath>
+    <value>
+      <renderSkipFlags>
+        <li>None</li>
+      </renderSkipFlags>
+	        <drawData>
+        <dataNorth>
+          <layer>51</layer>
+        </dataNorth>
+      </drawData>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+<xpath>/Defs/ThingDef[defName = "GruntMinor"]/apparel</xpath>
+    <value>
+      <renderSkipFlags>
+        <li>None</li>
+      </renderSkipFlags>
+	        <drawData>
+        <dataNorth>
+          <layer>51</layer>
+        </dataNorth>
+      </drawData>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+<xpath>/Defs/ThingDef[defName = "SkirmHelmet"]/apparel</xpath>
+    <value>
+      <renderSkipFlags>
+        <li>None</li>
+      </renderSkipFlags>
+	        <drawData>
+        <dataNorth>
+          <layer>51</layer>
+        </dataNorth>
+      </drawData>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+<xpath>/Defs/ThingDef[defName = "KigArmor"]/apparel</xpath>
+    <value>
+      <renderSkipFlags>
+        <li>None</li>
+      </renderSkipFlags>
+	        <drawData>
+        <dataNorth>
+          <layer>51</layer>
+        </dataNorth>
+      </drawData>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+<xpath>/Defs/ThingDef[defName = "JackalA"]/apparel</xpath>
+    <value>
+      <renderSkipFlags>
+        <li>None</li>
+      </renderSkipFlags>
+	        <drawData>
+        <dataNorth>
+          <layer>51</layer>
+        </dataNorth>
+      </drawData>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+<xpath>/Defs/ThingDef[defName = "MinorHelm"]/apparel</xpath>
+    <value>
+      <renderSkipFlags>
+        <li>None</li>
+      </renderSkipFlags>
+	        <drawData>
+        <dataNorth>
+          <layer>51</layer>
+        </dataNorth>
+      </drawData>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+<xpath>/Defs/ThingDef[defName = "MinorArmor"]/apparel</xpath>
+    <value>
+      <renderSkipFlags>
+        <li>None</li>
+      </renderSkipFlags>
+	        <drawData>
+        <dataNorth>
+          <layer>51</layer>
+        </dataNorth>
+      </drawData>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+<xpath>/Defs/ThingDef[defName = "MajorHelm"]/apparel</xpath>
+    <value>
+      <renderSkipFlags>
+        <li>None</li>
+      </renderSkipFlags>
+	        <drawData>
+        <dataNorth>
+          <layer>51</layer>
+        </dataNorth>
+      </drawData>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+<xpath>/Defs/ThingDef[defName = "MajorArmor"]/apparel</xpath>
+    <value>
+      <renderSkipFlags>
+        <li>None</li>
+      </renderSkipFlags>
+	        <drawData>
+        <dataNorth>
+          <layer>51</layer>
+        </dataNorth>
+      </drawData>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+<xpath>/Defs/ThingDef[defName = "Ranger_Helmet"]/apparel</xpath>
+    <value>
+      <renderSkipFlags>
+        <li>None</li>
+      </renderSkipFlags>
+	        <drawData>
+        <dataNorth>
+          <layer>51</layer>
+        </dataNorth>
+      </drawData>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+<xpath>/Defs/ThingDef[defName = "Ranger"]/apparel</xpath>
+    <value>
+      <renderSkipFlags>
+        <li>None</li>
+      </renderSkipFlags>
+	        <drawData>
+        <dataNorth>
+          <layer>51</layer>
+        </dataNorth>
+      </drawData>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+<xpath>/Defs/ThingDef[defName = "Spec_Helmet"]/apparel</xpath>
+    <value>
+      <renderSkipFlags>
+        <li>None</li>
+      </renderSkipFlags>
+	        <drawData>
+        <dataNorth>
+          <layer>51</layer>
+        </dataNorth>
+      </drawData>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+<xpath>/Defs/ThingDef[defName = "SpecOp"]/apparel</xpath>
+    <value>
+      <renderSkipFlags>
+        <li>None</li>
+      </renderSkipFlags>
+	        <drawData>
+        <dataNorth>
+          <layer>51</layer>
+        </dataNorth>
+      </drawData>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+<xpath>/Defs/ThingDef[defName = "Ultra_Helmet"]/apparel</xpath>
+    <value>
+      <renderSkipFlags>
+        <li>None</li>
+      </renderSkipFlags>
+	        <drawData>
+        <dataNorth>
+          <layer>51</layer>
+        </dataNorth>
+      </drawData>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+<xpath>/Defs/ThingDef[defName = "Ultra"]/apparel</xpath>
+    <value>
+      <renderSkipFlags>
+        <li>None</li>
+      </renderSkipFlags>
+	        <drawData>
+        <dataNorth>
+          <layer>51</layer>
+        </dataNorth>
+      </drawData>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+<xpath>/Defs/ThingDef[defName = "Zealot_Helmet"]/apparel</xpath>
+    <value>
+      <renderSkipFlags>
+        <li>None</li>
+      </renderSkipFlags>
+	        <drawData>
+        <dataNorth>
+          <layer>51</layer>
+        </dataNorth>
+      </drawData>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+<xpath>/Defs/ThingDef[defName = "ZealotArmor"]/apparel</xpath>
+    <value>
+      <renderSkipFlags>
+        <li>None</li>
+      </renderSkipFlags>
+	        <drawData>
+        <dataNorth>
+          <layer>51</layer>
+        </dataNorth>
+      </drawData>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+<xpath>/Defs/ThingDef[defName = "FM_Helmet"]/apparel</xpath>
+    <value>
+      <renderSkipFlags>
+        <li>None</li>
+      </renderSkipFlags>
+	        <drawData>
+        <dataNorth>
+          <layer>51</layer>
+        </dataNorth>
+      </drawData>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+<xpath>/Defs/ThingDef[defName = "General_Helmet"]/apparel</xpath>
+    <value>
+      <renderSkipFlags>
+        <li>None</li>
+      </renderSkipFlags>
+	        <drawData>
+        <dataNorth>
+          <layer>51</layer>
+        </dataNorth>
+      </drawData>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+<xpath>/Defs/ThingDef[defName = "General"]/apparel</xpath>
+    <value>
+      <renderSkipFlags>
+        <li>None</li>
+      </renderSkipFlags>
+	        <drawData>
+        <dataNorth>
+          <layer>51</layer>
+        </dataNorth>
+      </drawData>
+    </value>
+</Operation>
+
+</Patch>
